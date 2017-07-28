@@ -11,7 +11,10 @@ def string_permutations(s1, s2):
 
 
 class Testing(unittest.TestCase):
-    def test(self):
+    def test_string_permutations(self):
+        """
+        Check if the given strings are permutations of each other
+        """
         self.assertTrue(string_permutations('cobra', 'baroc'))
         self.assertFalse(string_permutations('dog', 'dug'))
         self.assertFalse(string_permutations('boat', 'garden'))
