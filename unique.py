@@ -1,4 +1,5 @@
 # encoding: utf-8
+import unittest
 
 
 def is_unique(s):
@@ -10,8 +11,9 @@ def is_unique(s):
     return True
 
 
-def test():
-    print is_unique('test')
+class Testint(unittest.TestCase):
+    def test():
+        print is_unique('test')
     print is_unique('cobra')
     print is_unique('thisreqpolxcvbnmdf')
 
