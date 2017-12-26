@@ -16,7 +16,7 @@ args = parse.parse_args()
 freq = args.freq or 'D'
 api_key = args.api_key or 'fe52241347d4855f7bc8cd70cd00cb6d'
 
-result_file = 'results'
+result_file = 'data/results'
 
 if freq == 'D':
     result_file = result_file + '_daily.csv'
@@ -44,7 +44,11 @@ def csv_writer(data,  filename='results_daily.csv'):
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
         writer.writeheader()
         for t in data:
-            date, price = datetime.strptime(t[0], '%Y%m%d'), t[1]
+            date, price = t[0], t[1]
+            if freq =='D':
+                date = datetime.strptime(date, '%Y%m%d')
+            else:
+                date = datetime.strptime(t[0], '%Y%m')
             row = {'date': date.date(), 'price': price}      
             writer.writerow(row)
 

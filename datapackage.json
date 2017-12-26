@@ -1,0 +1,19 @@
+{
+    "name": "natural-gas-prices",
+    "title": "NATURAL GAS PRICES",
+    "version": "0.0.1",
+    "resources": [
+        {
+	   "name": "results_daily",
+	   "format": "csv",
+	   "title": "Daily Results",
+	   "path": "data/results_daily.csv"
+	},
+	{
+	   "name": "results_monthly",
+	   "format": "csv",
+	   "title": "Monthly Results",
+	   "path": "data/results_monthly.csv"
+	}
+    ]
+}
