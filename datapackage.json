@@ -1,19 +1,65 @@
 {
-    "name": "natural-gas-prices",
-    "title": "NATURAL GAS PRICES",
-    "version": "0.0.1",
-    "resources": [
-        {
-	   "name": "results_daily",
-	   "format": "csv",
-	   "title": "Daily Results",
-	   "path": "data/results_daily.csv"
-	},
-	{
-	   "name": "results_monthly",
-	   "format": "csv",
-	   "title": "Monthly Results",
-	   "path": "data/results_monthly.csv"
-	}
-    ]
+  "name": "natural-gas-prices",
+  "title": "NATURAL GAS PRICES",
+  "version": "0.0.1",
+  "resources": [
+    {
+      "name": "results_daily",
+      "format": "csv",
+      "title": "Daily Results",
+      "path": "data/results_daily.csv"
+    },
+    {
+      "name": "results_monthly",
+      "format": "csv",
+      "title": "Monthly Results",
+      "path": "data/results_monthly.csv"
+    },
+    {
+      "name": "results_daily",
+      "path": "data\\results_daily.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 89113,
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "price",
+            "type": "number",
+            "description": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "results_monthly",
+      "path": "data\\results_monthly.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 4263,
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "price",
+            "type": "number",
+            "description": ""
+          }
+        ]
+      }
+    }
+  ],
+  "description": "",
+  "homepage": "",
+  "license": "ODC-PDDL-1.0",
+  "repository": "https://github.com/tino097/playground.git"
 }
